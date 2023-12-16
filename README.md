@@ -31,4 +31,6 @@ kubectl create ns <name>
     - nodes
     - pods
 
+```shell
 kubectl apply -f <manifest> 
+```
