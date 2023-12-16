@@ -49,7 +49,7 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
 ### Сеть:
 
 * Service:
- * ClusterIP
+ ** ClusterIP
  * NodePort
 
 LoadBalancer
