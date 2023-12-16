@@ -2,17 +2,17 @@
 
 
 ```
-                                                   _____     ______     __________ 
-                                                 |       | |        | |            |
-                               _________________ | POD 3 | |        | |  kubelet   |
-                             |                   | POD 2 | | DOCKER | |            | -> Container_1,Container_2,Container_3
-UI  ->  |     API Server     |  -> WORKER NODE 1 | POD 3 | |        | | Kube-proxy |
-        |     Scheduler      | _________________ | _____ | | ______ | | __________ |
-        | Controller-Manager |                   |       | |        | |            |
-CLI ->  |        etcd        |  -> WORKER NODE 2 | POD 1 | |        | |  kubelet   |
-                             | _________________ | POD 2 | | DOCKER | |            | -> Container_1,Container_2,Container_3
-                                                 | POD 3 | |        | | Kube-proxy |
-                                                 | _____ | | ______ | | __________ |
+                                                        ______     __________    ______
+                                                      |        | |            | |       |
+                                    _________________ |        | |  kubelet   | | POD 1 | -> Container_1,Container_2,Container_3
+                             |    |                   | DOCKER | |            | | POD 2 | -> Container_1
+UI  ->  |     API Server     | -> |   WORKER NODE 1   |        | | Kube-proxy | | POD 3 | -> Container_1,Container_2
+        |     Scheduler      |    | _________________ | ______ | | __________ | | _____ |
+        | Controller-Manager |    |                   |        | |            | |       |
+CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | | POD 1 | -> Container_1,Container_2
+                             |    | _________________ | DOCKER | |            | | POD 2 | -> Container_1,Container_2,Container_3
+                                                      |        | | Kube-proxy | | POD 3 | -> Container_1
+                                                      | ______ | | __________ | | _____ |
 
 ```
 
