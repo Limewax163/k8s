@@ -31,3 +31,5 @@ kubectl create ns <name>
     - nodes
     - pods
 
+```shell
+kubectl describe pod <pod_name> -n <namespace_name>
