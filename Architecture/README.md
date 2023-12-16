@@ -16,7 +16,7 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
 
 ```
 
-`UI` - User Interface
+`UI` - User Interface (Lens, k9s)
 
 `kubectl` - Утилита для взаимодействия с k8s
 
