@@ -31,6 +31,7 @@ kubectl create ns <name>
     - nodes
     - pods
 
+Команда для получения информации об определенном поде в определенном неймспейсе
 ```shell
 kubectl describe pod <pod_name> -n <namespace_name>
 ```
