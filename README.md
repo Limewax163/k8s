@@ -43,11 +43,11 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
 
 [`Replicaset`](https://github.com/Limewax163/k8s/blob/main/Replicaset) - Для горизонтального масштабирования контейнеров
 
-`Deployment` - Подходит для большинства ситуаций при деплое приложений
+[`Deployment`](https://github.com/Limewax163/k8s/blob/main/Deployment) - Подходит для большинства ситуаций при деплое приложений
 
-`StatefulSet` - Контейнеры запускаются с порядковыми номерами
+[`StatefulSet`](https://github.com/Limewax163/k8s/blob/main/StatefulSet) - Контейнеры запускаются с порядковыми номерами
 
-`DaemonSet` - Создает по 1 контейнеру на каждой ноде
+[`DaemonSet`](https://github.com/Limewax163/k8s/blob/main/DaemonSet) - Создает по 1 контейнеру на каждой ноде
 
 ### Сеть:
 
