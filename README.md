@@ -16,7 +16,7 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
 
 ```
 
-Нагрузки
+Нагрузки:
 
 ```
   POD:
