@@ -15,16 +15,16 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
                                                       |        | | __________ | | _____ |
 
 ```
-UI - User Interface
-kubectl - 
+`UI` - User Interface
+`kubectl` - 
 
-API Server - Взаимодействие с k8s
-Shceduler - Оптимизирует взаимодействие с k8s для API
-Controller-Manager - Исполняет задание отправленное через API
-etcd - База <ключ_значение>. Сохраняет изменения производимые в нодах.
+`API Server` - Взаимодействие с k8s
+`Shceduler` - Оптимизирует взаимодействие с k8s для API
+`Controller-Manager` - Исполняет задание отправленное через API
+`etcd` - База <ключ_значение>. Сохраняет изменения производимые в нодах.
 
-kubelet - Основной процесс который стартует весь kuber в WORKER NODE
-Kube-proxy - Отвечает за все сетевые взаимодействия в kuber
+`kubelet` - Основной процесс который стартует весь kuber в WORKER NODE
+`Kube-proxy` - Отвечает за все сетевые взаимодействия в kuber
 
 Нагрузки:
 
