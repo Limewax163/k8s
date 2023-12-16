@@ -2,17 +2,17 @@
 
 
 ```
-                                                   _____        ______        __________ 
-                                                 |       |    |        |    |            |
-                               _________________ | POD 3 |    |        | -> |  kubelet   |
-                             |                   | POD 2 | -> | DOCKER |    |            | -> Container_1,Container_2,Container_3
-UI  ->  |     API Server     |  -> WORKER NODE 1 | POD 3 |    |        | -> | Kube-proxy |
-        |     Scheduler      | _________________ | _____ |    | ______ |    | __________ |
-        | Controller-Manager |                   |       |    |        |    |            |
-CLI ->  |        etcd        |  -> WORKER NODE 2 | POD 1 |    |        | -> |  kubelet   |
-                             | _________________ | POD 2 |    | DOCKER |    |            | -> Container_1,Container_2,Container_3
-                                                 | POD 3 |    |        | -> | Kube-proxy |
-                                                 | _____ |    | ______ |    | __________ |
+                                                   _____     ______     __________ 
+                                                 |       | |        | |            |
+                               _________________ | POD 3 | |        | |  kubelet   |
+                             |                   | POD 2 | | DOCKER | |            | -> Container_1,Container_2,Container_3
+UI  ->  |     API Server     |  -> WORKER NODE 1 | POD 3 | |        | | Kube-proxy |
+        |     Scheduler      | _________________ | _____ | | ______ | | __________ |
+        | Controller-Manager |                   |       | |        | |            |
+CLI ->  |        etcd        |  -> WORKER NODE 2 | POD 1 | |        | |  kubelet   |
+                             | _________________ | POD 2 | | DOCKER | |            | -> Container_1,Container_2,Container_3
+                                                 | POD 3 | |        | | Kube-proxy |
+                                                 | _____ | | ______ | | __________ |
 
 ```
 
