@@ -17,6 +17,7 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
 ```
 
 `UI` - User Interface
+
 `kubectl` - 
 
 ---
