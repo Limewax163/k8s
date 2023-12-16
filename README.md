@@ -5,7 +5,7 @@ kubectl get nodes
 
 Для применения манифестов
 ```shell
-kubectl -n <namespace_name> -f <manifest_name>
+kubectl apply -n <namespace_name> -f <manifest_name>
 ```
 В кубере существуют `namespace`, что-то типо групп или каталогов (позволяющих отделять приложения друг от друга) внутри кубер кластера.
 
@@ -31,6 +31,3 @@ kubectl create ns <name>
     - nodes
     - pods
 
-```shell
-kubectl apply -f <manifest_name> 
-```
