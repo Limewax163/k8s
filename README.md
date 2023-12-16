@@ -38,5 +38,5 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
 Конфигурации:
   ConfigMap
   Secret
-Для применения манифестов - `kubectl -n <your_namespace> -f <your_manifest>`
 ```
+Для применения манифестов - `kubectl -n <your_namespace> -f <your_manifest>`
