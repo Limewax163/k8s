@@ -33,3 +33,4 @@ kubectl create ns <name>
 
 ```shell
 kubectl describe pod <pod_name> -n <namespace_name>
+```
