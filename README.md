@@ -38,7 +38,7 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
 
 ### Нагрузки:
 
-`POD` -
+POD -
 
 [`Replicaset`](https://github.com/Limewax163/k8s/blob/main/Replicaset) - Для горизонтального масштабирования контейнеров
 
@@ -60,7 +60,7 @@ LoadBalancer
 
 Ingress:
 
-Конфигурации:
+### Конфигурации:
 
 ConfigMap
 
