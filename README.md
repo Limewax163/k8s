@@ -38,23 +38,33 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
 
 ### Нагрузки:
 
-```
-POD:
-  Replicaset - Для горизонтального масштабирования контейнеров
-  Deployment - Подходит для большинства ситуаций при деплое приложений
-  StatefulSet - Контейнеры запускаются с порядковыми номерами
-  DaemonSet - Создает по 1 контейнеру на каждой ноде
 
-Сеть:
-  Service:
-    ClusterIP
-    NodePort
-    LoadBalancer
-    ...
-  Ingress
+### POD:
+
+`Replicaset` - Для горизонтального масштабирования контейнеров
+
+`Deployment` - Подходит для большинства ситуаций при деплое приложений
+
+`StatefulSet` - Контейнеры запускаются с порядковыми номерами
+
+`DaemonSet` - Создает по 1 контейнеру на каждой ноде
+
+### Сеть:
+
+Service:
+
+ClusterIP
+
+NodePort
+
+LoadBalancer
+
+Ingress
 
 Конфигурации:
-  ConfigMap
-  Secret
-```
+
+ConfigMap
+
+Secret
+
 Для применения манифестов - `kubectl -n <your_namespace> -f <your_manifest>`
