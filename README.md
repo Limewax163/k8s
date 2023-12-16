@@ -20,3 +20,12 @@ kubectl get ns
 ```shell
 kubectl create ns <name>
 ```
+
+
+Построение SHELL команд kubectl:
+* kubectl
+  - get
+  - create
+  - delete
+    - ns (namespace)
+    - nodes
