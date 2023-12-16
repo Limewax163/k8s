@@ -36,23 +36,21 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
 
 ### Нагрузки:
 
-POD -
+* POD
 
-[`Replicaset`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/ReplicaSet.md) - Для горизонтального масштабирования контейнеров
+* [`Replicaset`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/ReplicaSet.md) - Для горизонтального масштабирования контейнеров
 
-[`Deployment`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/Deployments.md) - Подходит для большинства ситуаций при деплое приложений
+* [`Deployment`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/Deployments.md) - Подходит для большинства ситуаций при деплое приложений
 
-[`StatefulSet`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/StatefulSet.md) - Контейнеры запускаются с порядковыми номерами
+* [`StatefulSet`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/StatefulSet.md) - Контейнеры запускаются с порядковыми номерами
 
-[`DaemonSet`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/DaemonSet.md) - Создает по 1 контейнеру на каждой ноде
+* [`DaemonSet`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/DaemonSet.md) - Создает по 1 контейнеру на каждой ноде
 
 ### Сеть:
 
-Service:
-
-ClusterIP
-
-NodePort
+* Service:
+ * ClusterIP
+ * NodePort
 
 LoadBalancer
 
