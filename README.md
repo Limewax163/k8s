@@ -27,5 +27,6 @@ kubectl create ns <name>
   - get
   - create
   - delete
-    - ns (namespace)
+    - namespace / ns / -n
     - nodes
+    - pods
