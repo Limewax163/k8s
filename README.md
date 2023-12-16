@@ -41,7 +41,7 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
 
 ### POD:
 
-`Replicaset` - Для горизонтального масштабирования контейнеров
+[`Replicaset`](https://github.com/Limewax163/k8s/blob/main/Replicaset) - Для горизонтального масштабирования контейнеров
 
 `Deployment` - Подходит для большинства ситуаций при деплое приложений
 
