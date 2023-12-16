@@ -16,6 +16,7 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
 
 ```
 
+```
 Нагрузки:
   POD:
     Replicaset - Для горизонтального масштабирования контейнеров
@@ -34,3 +35,4 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
   ConfigMap
   Secret
 Для применения манифестов - `kubectl -n <your_namespace> -f <your_manifest>`
+```
