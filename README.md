@@ -1,2 +1,1 @@
-# k8s
-kubernetes
+`kubctl -n <your_namespace> [keys,options]`
