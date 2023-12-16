@@ -40,7 +40,7 @@ POD -
 
 [`Replicaset`](https://github.com/Limewax163/k8s/blob/main/Replicaset) - Для горизонтального масштабирования контейнеров
 
-[`Deployment`](https://github.com/Limewax163/k8s/blob/main/Deployment) - Подходит для большинства ситуаций при деплое приложений
+[`Deployment`](Architecture/examples/Deployments.md) - Подходит для большинства ситуаций при деплое приложений
 
 [`StatefulSet`](https://github.com/Limewax163/k8s/blob/main/StatefulSet) - Контейнеры запускаются с порядковыми номерами
 
