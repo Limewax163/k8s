@@ -15,7 +15,9 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
                                                       |        | | __________ | | _____ |
 
 ```
+
 `UI` - User Interface
+
 `kubectl` - 
 
 `API Server` - Взаимодействие с k8s
