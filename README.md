@@ -1,1 +1,1 @@
-`kubctl -n <your_namespace> [keys,options]`
+Для применения манифестов - `kubctl -n <your_namespace> -f <your_manifest>`
