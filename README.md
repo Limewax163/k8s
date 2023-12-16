@@ -36,10 +36,9 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
 
 `Kube-proxy` - Отвечает за все сетевые взаимодействия в kuber
 
-## Нагрузки:
+### Нагрузки:
 
-
-### POD:
+`POD` -
 
 [`Replicaset`](https://github.com/Limewax163/k8s/blob/main/Replicaset) - Для горизонтального масштабирования контейнеров
 
@@ -59,7 +58,7 @@ NodePort
 
 LoadBalancer
 
-Ingress
+Ingress:
 
 Конфигурации:
 
@@ -67,4 +66,5 @@ ConfigMap
 
 Secret
 
+Для просмотре нод - `kubectl get nodes`
 Для применения манифестов - `kubectl -n <your_namespace> -f <your_manifest>`
