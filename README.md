@@ -14,3 +14,9 @@ kubectl -n <your_namespace> -f <your_manifest>
 ```shell
 kubectl get ns
 ```
+
+Для создания:
+
+```shell
+kubectl create ns <name>
+```
