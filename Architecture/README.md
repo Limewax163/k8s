@@ -38,12 +38,12 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
 * [`POD`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/POD.md)
 * [`Replicaset`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/ReplicaSet.md) - Для горизонтального масштабирования контейнеров
 * [`Deployment`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/Deployment.md) - Подходит для большинства ситуаций при деплое приложений
-* [`StatefulSet`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/StatefulSet.md) - Контейнеры запускаются с порядковыми номерами, так же запонинает порядок их запуска и позволяет настраивать его.
+* [`StatefulSet`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/StatefulSet.md) - Контейнеры запускаются с порядковыми номерами, так же запонинает порядок их запуска и позволяет настраивать его
 * [`DaemonSet`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/DaemonSet.md) - Создает по 1 контейнеру на каждой ноде
 
 ### Сеть:
 * Service:
-  - ClusterIP
+  - [`ClusterIP`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/ClusterIP.md) - Создает балансировщик (RoundRobin) который будет работать на основании заложенных в манифесте лейблов
   - NodePort
   - LoadBalancer
 * Ingress:
