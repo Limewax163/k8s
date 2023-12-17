@@ -36,4 +36,10 @@ kubectl create ns <name>
 kubectl describe pod <pod_name> -n <namespace_name>
 ```
 
+Отладочный способ для подключения к контейнеру внутри kuber кластера (проброс портов)
+
+```shell
+kubectl port-forward pod <POD_NAME> -n <NAMESPACE_NAME>
+```
+
 1,25
