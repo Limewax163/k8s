@@ -48,7 +48,7 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
   - [`LoadBalancer`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/LoadBalancer.md) - Предназначен для kubernetes кластеров находящихся на облаках
   - [`External`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/External.md) - Создает DNS имя в kubernetes кластере (маскирует за собой какой-то внешний ресурс)
   - [`Headless`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/Headless.md) - Позволяет напрямую подсоединиться к целевому контейнеру (без дополнительных хопов)
-* Ingress:
+* [`Ingress`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/Ingress.md) - Ingress контроллер позволяет перенаправить внешнее подключение на внутренний сервис
 
 ### Конфигурации:
 * ConfigMap
