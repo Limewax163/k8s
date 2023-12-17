@@ -51,7 +51,7 @@ spec:
   - name: nginx-service
 * spec:
   - selector:
-    - app.kubernetes.io/name: proxy  ---------- Сервис работает на базе лейбла (в данном случае proxy) и по нему обращается к данному PODу (nginx)
+    - app.kubernetes.io/name: proxy  - Сервис работает на базе лейбла (в данном случае proxy) и по нему обращается к данному PODу (nginx)
   - ports:
     - name: name-of-service-port
     - protocol: TCP
