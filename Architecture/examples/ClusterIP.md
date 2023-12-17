@@ -34,14 +34,14 @@ spec:
 * metadata:
   - name: nginx
   - labels:
-    - app.kubernetes.io/name: proxy  - Лейбл PODа
+    - app.kubernetes.io/name: proxy  ---------- Лейбл PODа
 * spec:
   - containers:
     - name: nginx
     - image: nginx:stable
     - ports:
         - containerPort: 80 ---------- Порт на PODе
-        - name: http-web-svc --------- Имя порта к которому привязывается сервис из второго блока манифеста
+        - name: http-web-svc ---------- Имя порта к которому привязывается сервис из второго блока манифеста
 
 --
 
@@ -51,9 +51,9 @@ spec:
   - name: nginx-service
 * spec:
   - selector:
-    - app.kubernetes.io/name: proxy  - Сервис работает на базе лейбла (в данном случае proxy) и по нему обращается к данному PODу (nginx)
+    - app.kubernetes.io/name: proxy  ---------- Сервис работает на базе лейбла (в данном случае proxy) и по нему обращается к данному PODу (nginx)
   - ports:
     - name: name-of-service-port
     - protocol: TCP
-    - port: 80   -------------------- Слушает порт 80
-    - targetPort: http-web-svc ------ Привязывает порт к соответствующему порту в первом блоке манифеста
+    - port: 80   ---------- Слушает порт 80
+    - targetPort: http-web-svc ---------- Привязывает порт к соответствующему порту в первом блоке манифеста
