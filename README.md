@@ -19,6 +19,7 @@ kubectl get ns <NAMESPACE_NAME> -o yaml
 > [!NOTE]
 > вывести информацию можно как в json так и в yaml. Разница будет в окончании команды
 
+---
 
 Для просмотра нод
 ```shell
