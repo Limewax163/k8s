@@ -1,3 +1,5 @@
+MAKEFILE
+
 Для просмотра нод
 ```shell
 kubectl get nodes
