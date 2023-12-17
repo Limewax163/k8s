@@ -47,4 +47,4 @@ spec:
             - containerPort:
 
 > [!NOTE]
-> Horizon-pods-autoscaller - динамическое увеличение колличества реплик
+> Horizontal-pods-autoscaller - динамическое увеличение колличества реплик
