@@ -47,4 +47,4 @@ spec:
             - containerPort:
 
 > [!NOTE]
-> Horizontal-pods-autoscaller - динамическое увеличение колличества реплик
+> Для динамического увеличения колличества реплик приложения существует Horizontal-pods-autoscaller
