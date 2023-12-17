@@ -43,7 +43,7 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
 
 ### Сеть:
 * Service:
-  - [`ClusterIP`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/ClusterIP.md) - Создает балансировщик (RoundRobin) который будет работать на основании заложенных в манифесте лейблов
+  - [`ClusterIP`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/ClusterIP.md) - Балансировщик (RoundRobin)
   - NodePort
   - LoadBalancer
 * Ingress:
