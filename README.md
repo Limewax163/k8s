@@ -5,7 +5,7 @@
 make <key>
 ```
 
-[`MAKEFILE`](https://github.com/Limewax163/k8s/blob/main/Makefile.md)
+Для примера и наглядного понимания построения структуры файла [`MAKEFILE`](https://github.com/Limewax163/k8s/blob/main/Makefile.md)
 
 ---
 
