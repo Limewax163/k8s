@@ -26,16 +26,18 @@ spec:
 * kind
 * metadata:
   - name:
-  - labels:
-    - app:
+  - labels: - Метка для сущностей в kuber (в данном случае лейбл самого вида манифеста)
+    - app: - например указываем название приложения
+    - author: - например указываем автора данного манифеста
+    - version: - например указываем версию приложения
 * spec:
-  - replicas:
+  - replicas: - Колличество реплик приложения
   - selector:
-    - matchLabels:
+    - matchLabels: - По каким лейблам выбираются контейнеры для реплик
       - app:
   - template:
     - metadata:
-      - labels:
+      - labels: - Лейблы которые отдаются уже непосредственно контейнерам.
         - app:
       - spec:
         - container:
@@ -43,3 +45,5 @@ spec:
           - image:
           - ports:
             - containerPort:
+
+Horizon-pods-autoscaller - динамическое увеличение колличества реплик
