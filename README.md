@@ -1,4 +1,4 @@
-MAKEFILE
+[`MAKEFILE`](https://github.com/Limewax163/k8s/blob/main/Makefile.md)
 
 Для просмотра нод
 ```shell
