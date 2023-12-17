@@ -21,3 +21,25 @@ spec:
         ports:
         - containerPort: 80
 ```
+
+* apiVersion:
+* kind
+* metadata:
+  - name:
+  - labels:
+    - app:
+* spec:
+  - replicas:
+  - selector:
+    - matchLabels:
+      - app:
+  - template:
+    - metadata:
+      - labels:
+        - app:
+      - spec:
+        - container:
+          - name:
+          - image:
+          - ports:
+            - containerPort:
