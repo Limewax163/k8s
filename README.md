@@ -7,6 +7,8 @@ make <key>
 
 Для примера и наглядного понимания построения структуры файла [`MAKEFILE`](https://github.com/Limewax163/k8s/blob/main/Makefile.md)
 
+> [!NOTE]
+> Makefile не нужны права на исполнение
 ---
 
 Для просмотра нод
