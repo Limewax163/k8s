@@ -1,25 +1,57 @@
 ```shell
 apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    app.kubernetes.io/name: proxy
+spec:
+  containers:
+  - name: nginx
+    image: nginx:stable
+    ports:
+      - containerPort: 80
+        name: http-web-svc
+
+---
+apiVersion: v1
 kind: Service
 metadata:
-  labels:
-    k8s-app: kube-dns
-    kubernetes.io/cluster-service: "true"
-    kubernetes.io/name: CoreDNS
-  name: kube-dns
-  namespace: kube-system
+  name: nginx-service
 spec:
-  clusterIP: 10.96.0.10
-  ports:
-  - name: dns
-    port: 53
-    protocol: UDP
-    targetPort: 53
-  - name: dns-tcp
-    port: 53
-    protocol: TCP
-    targetPort: 53
   selector:
-    k8s-app: kube-dns
-  type: ClusterIP
+    app.kubernetes.io/name: proxy
+  ports:
+  - name: name-of-service-port
+    protocol: TCP
+    port: 80
+    targetPort: http-web-svc
 ```
+
+* apiVersion: v1
+* kind: Pod
+* metadata:
+  - name: nginx
+  - labels:
+    - app.kubernetes.io/name: proxy
+* spec:
+  - containers:
+    - name: nginx
+    - image: nginx:stable
+    - ports:
+        - containerPort: 80
+        - name: http-web-svc
+
+---
+* apiVersion: v1
+* kind: Service
+* metadata:
+  - name: nginx-service
+* spec:
+  - selector:
+    - app.kubernetes.io/name: proxy
+  - ports:
+    - name: name-of-service-port
+    - protocol: TCP
+    - port: 80
+    - targetPort: http-web-svc
