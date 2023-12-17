@@ -46,8 +46,8 @@ CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | 
   - [`ClusterIP`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/ClusterIP.md) - Балансировщик (RoundRobin)
   - [`NodePort`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/NodePort.md) - Позволяет создавать порт на каждой ноде кластера
   - [`LoadBalancer`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/LoadBalancer.md) - Предназначен для kubernetes кластеров находящихся на облаках
-  - [`External`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/External.md) - Создает DNS имя в kubernetes кластере
-  - [`Headless`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/Headless.md) - 
+  - [`External`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/External.md) - Создает DNS имя в kubernetes кластере (маскирует за собой какой-то внешний ресурс)
+  - [`Headless`](https://github.com/Limewax163/k8s/blob/main/Architecture/examples/Headless.md) - Позволяет напрямую подсоединиться к целевому контейнеру (без дополнительных хопов)
 * Ingress:
 
 ### Конфигурации:
