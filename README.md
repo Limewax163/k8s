@@ -35,6 +35,11 @@ kubectl create ns <name>
 ```shell
 kubectl describe pod <pod_name> -n <namespace_name>
 ```
+Команда для просмотра логов (РАБОТАЕТ ТОЛЬКО С PODами)
+
+```shell
+kubectl logs <POD_NAME> -n <NAMESPACE_NAME>
+```
 
 Отладочный способ для подключения к контейнеру внутри kuber кластера (проброс портов)
 
