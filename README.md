@@ -29,8 +29,15 @@ kind create cluster --config=./mykind.yaml
 Для просмотра любых сущностей (в данном примере это `namespace (ns)` в кубер можно воспользоваться командой:
 
 ```shell
+kubectl get ns <NAMESPACE_NAME>
+```
+
+При просмотре можно так же воспользоваться командой вывода (например в файл):
+
+```shell
 kubectl get ns <NAMESPACE_NAME> -o yaml
 ```
+
 > [!NOTE]
 > вывести информацию можно как в json так и в yaml. Разница будет в окончании команды
 
