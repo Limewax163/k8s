@@ -19,7 +19,7 @@ clean-app:
   kubectl delete -f ns.yaml
 
 ```
-Выполняется команда:
+Шаблон команды:
 ```shell
 kind <ключ>
 ```
