@@ -43,6 +43,7 @@ kind <команда>
   - kubectl delete -f db.yaml
   - echo "Namespase delete"
   - kubectl delete -f ns.yaml
+---
 
 В итоге мы получаем инструкции описаные в файле <Makefile> при вызове которых через команду <make> будут выполняться сценарии, соответствующие данной команде.
 
