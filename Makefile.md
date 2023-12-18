@@ -25,7 +25,7 @@ kind <команда>
 ```
 Примечания к файлу:
 
-* preprovision: ------------`Здесь указывается команда`
+* preprovision:  `Здесь указывается команда`
   - echo "Cluster Deployment" -----Первая команда из инструкции которая будет выполняться при вызове make preprovision
   - kind create cluster --config kind.yaml --Вторая команда из инструкции которая будет выполняться при вызве make preprovision
 
