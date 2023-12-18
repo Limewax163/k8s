@@ -43,3 +43,10 @@ kind <ключ>
   - kubectl delete -f db.yaml
   - echo "Namespase delete"
   - kubectl delete -f ns.yaml
+
+В итоге мы получаем инструкции описаные в файле <Makefile> при вызове которых через команду <make> будут выполняться shell команды, соответствующие инструкциям описаным для каждого ключа в файле <Makefile>
+В данном файле описаны три команды
+make preprovision - которая создаст нам кластер на основе конфигурационного файла kind.yml
+make destroy - которая удалит существующий кластер kind
+make install-app - который создаст <namespase> в кластере kubernetes на основе конфигурации ns.yaml и db.yaml
+make clean-app - который удалит <namespase> в кластере kubernetes на основе конфигурации ns.yaml и db.yaml
