@@ -44,7 +44,7 @@ kubectl get <сущность> <имя_сущности> -o yaml > test.yaml
 ---
 Примеры сущностей:
 * nodes
-* n / ns / namespace 
+* ns / namespace
 
 Для просмотра нод
 ```shell
