@@ -26,7 +26,7 @@ kind create cluster --config=./mykind.yaml
 > Makefile не нужны права на исполнение
 ---
 
-Для просмотра любых сущностей в кубер можно воспользоваться командой:
+Для просмотра любых сущностей (в данном примере это `namespace (ns)` в кубер можно воспользоваться командой:
 
 ```shell
 kubectl get ns <NAMESPACE_NAME> -o yaml
