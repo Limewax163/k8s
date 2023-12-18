@@ -26,13 +26,13 @@ kind <команда>
 Примечания к файлу:
 
 * preprovision:  `Здесь указывается команда`
-  - echo "Cluster Deployment" -----Первая команда из инструкции которая будет выполняться при вызове make preprovision
-  - kind create cluster --config kind.yaml --Вторая команда из инструкции которая будет выполняться при вызве make preprovision
+  - echo "Cluster Deployment" `Первая команда из инструкции которая будет выполняться при вызове make preprovision`
+  - kind create cluster --config kind.yaml `Вторая команда из инструкции которая будет выполняться при вызве make preprovision`
 
-* destroy: ------------------------------------------Еще одна команда
-  - kind delete cluster --name kind ----Первая команда из инструкции которая будет выполняться при вызове ключа make destroy
+* destroy: `Еще одна команда`
+  - kind delete cluster --name kind `Первая команда из инструкции которая будет выполняться при вызове ключа make destroy`
 
-* install-app: --------------------------------------И так далее
+* install-app: `И так далее`
   - echo "Namespase create"
   - kubectl apply -f ns.yaml
   - echo "Database deployment"
