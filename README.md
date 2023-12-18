@@ -31,7 +31,7 @@ kind create cluster --config=./mykind.yaml
 ```shell
 kubectl get ns <NAMESPACE_NAME>
 ```
-Можно получить информацию непосредственно конфигурационного файла для сущностей в форматах `json` или `yaml`:
+Можно получить информацию непосредственно конфигурационного файла для этих сущностей в форматах `json` или `yaml`:
 
 ```shell
 kubectl get ns <NAMESPACE_NAME> -o yaml
