@@ -31,9 +31,6 @@ kind create cluster --config=./mykind.yaml
   - get
   - create
   - delete
-    - namespace / ns / -n
-    - nodes
-
 
 Для просмотра любых сущностей (в данном примере это `namespace (ns)` в кубер можно воспользоваться командой:
 
@@ -56,6 +53,8 @@ kubectl get <сущность> <имя_сущности> -o yaml > test.yaml
 Примеры сущностей:
 * nodes
 * ns / namespace
+* pods
+
 ---
 Для применения манифестов
 ```shell
@@ -63,12 +62,6 @@ kubectl apply -n <namespace_name> -f <manifest_name>
 ```
 В кубере существуют `namespace`, что-то типо групп или каталогов (позволяющих отделять приложения друг от друга) внутри кубер кластера.
 
-
-Для создания:
-
-```shell
-kubectl create ns <name>
-```
 
 Команда для получения информации об определенном поде в определенном неймспейсе
 ```shell
