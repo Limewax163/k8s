@@ -30,7 +30,7 @@ kind <команда>
   - kind create cluster --config kind.yaml `Вторая команда из инструкции которая будет выполняться при вызве make preprovision`
 
 * destroy: `Еще одна команда`
-  - kind delete cluster --name kind `Первая команда из инструкции которая будет выполняться при вызове ключа make destroy`
+  - kind delete cluster --name kind `Первая команда из инструкции которая будет выполняться при вызове make destroy`
 
 * install-app: `И так далее`
   - echo "Namespase create"
