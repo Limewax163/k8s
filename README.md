@@ -2,13 +2,12 @@
 
 
 
-Пример создания kind кластера на основе конфигурационного yaml файла <kind.yml>:
+Пример создания kind кластера на основе конфигурационного yaml файла <kind.yml> с одной рабочей нодой <worker> и одной мастер нодой <conotrol-plane>:
 
 ```shell
-kind: Cluster
+kind: kind-cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
-- role: worker
 - role: worker
 - role: control-plane
 
