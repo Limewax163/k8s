@@ -26,6 +26,15 @@ kind create cluster --config=./mykind.yaml
 > Makefile не нужны права на исполнение
 ---
 
+Построение SHELL команд kubectl:
+* kubectl
+  - get
+  - create
+  - delete
+    - namespace / ns / -n
+    - nodes
+
+
 Для просмотра любых сущностей (в данном примере это `namespace (ns)` в кубер можно воспользоваться командой:
 
 ```shell
@@ -45,39 +54,19 @@ kubectl get <сущность> <имя_сущности> -o yaml > test.yaml
 Примеры сущностей:
 * nodes
 * ns / namespace
-
-Для просмотра нод
-```shell
-kubectl get nodes
-```
-
+---
 Для применения манифестов
 ```shell
 kubectl apply -n <namespace_name> -f <manifest_name>
 ```
 В кубере существуют `namespace`, что-то типо групп или каталогов (позволяющих отделять приложения друг от друга) внутри кубер кластера.
 
-Для просмотра:
-
-```shell
-kubectl get ns
-```
 
 Для создания:
 
 ```shell
 kubectl create ns <name>
 ```
-
-
-Построение SHELL команд kubectl:
-* kubectl
-  - get
-  - create
-  - delete
-    - namespace / ns / -n
-    - nodes
-    - pods
 
 Команда для получения информации об определенном поде в определенном неймспейсе
 ```shell
