@@ -19,17 +19,20 @@ clean-app:
   kubectl delete -f ns.yaml
 
 ```
-
+Выполняется команда:
+```shell
+kind <ключ>
+```
 Примечания к файлу:
 
-* preprovision:
-  - echo "Cluster Deployment"
-  - kind create cluster --config kind.yaml
+* preprovision: -------------------------------------------------Здесь указывается ключ для выполнения определенной команды
+  - echo "Cluster Deployment" -----------------------------------Первая команда которая будет выполняться при вызове ключа <preprovision>
+  - kind create cluster --config kind.yaml ----------------------Вторая команда которая будет выполняться при вызве ключа <preprovision>
 
-* destroy:
-  - kind delete cluster --name kind
+* destroy: ------------------------------------------------------Еще один ключ для выполнения определенной команды
+  - kind delete cluster --name kind -----------------------------Первая команда которая будет выполняться при вызове ключа <destroy>
 
-* install-app:
+* install-app: --------------------------------------------------И так далее
   - echo "Namespase create"
   - kubectl apply -f ns.yaml
   - echo "Database deployment"
