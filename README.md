@@ -58,12 +58,6 @@ kubectl get <сущность> <имя_сущности> -o yaml > test.yaml
 
 `namespace`, что-то типо групп или каталогов (позволяющих отделять приложения друг от друга) внутри кубер кластера.
 
----
-Для применения манифестов
-```shell
-kubectl apply -n <namespace_name> -f <manifest_name>
-```
-
 `pod`
 
 Команда для получения информации об определенном поде в определенном неймспейсе
@@ -75,6 +69,14 @@ kubectl describe pod <pod_name> -n <namespace_name>
 ```shell
 kubectl logs <POD_NAME> -n <NAMESPACE_NAME>
 ```
+
+---
+Для применения манифестов
+```shell
+kubectl apply -n <namespace_name> -f <manifest_name>
+```
+
+
 
 Отладочный способ для подключения к контейнеру внутри kuber кластера (проброс портов)
 
