@@ -19,7 +19,7 @@ metadata:
   name: web
 spec:
   selector:
-    matchLabels:
+    matchLabels: #Лейбл по которому StatefulSet понимает чем он управляет
       app: nginx
   serviceName: "nginx"
   replicas: 3
@@ -27,7 +27,7 @@ spec:
   template:
     metadata:
       labels:
-        app: nginx
+        app: nginx #Лейблы которые выдаются создаваемым контейнерам
     spec:
       terminationGracePeriodSeconds: 10
       containers:
