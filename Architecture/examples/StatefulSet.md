@@ -1,6 +1,6 @@
 ```
-apiVersion: v1
-kind: Service
+apiVersion: apps/v1
+kind: StatefulSet
 metadata:
   name: nginx
   labels:
