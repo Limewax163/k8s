@@ -49,3 +49,4 @@ spec:
         requests:
           storage: 1Gi
 ```
+persistent volume
