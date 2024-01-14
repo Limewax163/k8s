@@ -4,14 +4,14 @@
 ```
                                                                    __________    ______
               Kubernetes                              |        | |            | |       |
-          _____ MASTER ______       _________________ |        | |  kubelet   | | POD 1 | -> Container_1,Container_2,Container_3
-        |                    |    |                   | DOCKER | |            | | POD 2 | -> Container_1
-UI  ->  |     API Server     | -> |   WORKER NODE 1   |        | | Kube-proxy | | POD 3 | -> Container_1,Container_2
+          _____ MASTER ______       _________________ |        | |  kubelet   | | POD 1 | -> Container1,Container2,Container3
+        |                    |    |                   | DOCKER | |            | | POD 2 | -> Container1
+UI  ->  |     API Server     | -> |   WORKER NODE 1   |        | | Kube-proxy | | POD 3 | -> Container1,Container2
         |     Scheduler      |    | _________________ |        | | __________ | | _____ |
         | Controller-Manager |    |                   |        | |            | |       |
-CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | | POD 1 | -> Container_1,Container_2
-        | __________________ |    | _________________ | DOCKER | |            | | POD 2 | -> Container_1,Container_2,Container_3
-                                                      |        | | Kube-proxy | | POD 3 | -> Container_1
+CLI ->  |        etcd        | -> |   WORKER NODE 2   |        | |  kubelet   | | POD 1 | -> Container1,Container2
+        | __________________ |    | _________________ | DOCKER | |            | | POD 2 | -> Container1,Container2,Container3
+                                                      |        | | Kube-proxy | | POD 3 | -> Container1
                                                       |        | | __________ | | _____ |
 
 ```
