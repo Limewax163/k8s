@@ -53,6 +53,6 @@ kind <команда>
 
 * make destroy - которая удалит существующий кластер kind
 
-* make install-app - который создаст <namespase> в кластере kubernetes на основе конфигурации ns.yaml и db.yaml
+* make install-app - который создаст `<namespase>` в кластере kubernetes на основе конфигурации ns.yaml и db.yaml
 
-* make clean-app - который удалит <namespase> в кластере kubernetes на основе конфигурации ns.yaml и db.yaml
+* make clean-app - который удалит `<namespase>` в кластере kubernetes на основе конфигурации ns.yaml и db.yaml
