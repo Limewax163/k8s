@@ -24,7 +24,7 @@ kind create cluster --config=./mykind.yaml
 kind delete clusters --all
 ```
 
-Для автоматизации процессов можно использовать make. Создается файл <Makefile>.
+Для автоматизации процессов можно использовать make. Создается файл `<Makefile>`.
 Пример и наглядное понимания построения структуры файла [`MAKEFILE`](https://github.com/Limewax163/k8s/blob/main/Makefile.md)
 
 > [!NOTE]
