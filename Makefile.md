@@ -56,3 +56,6 @@ kind <команда>
 * make install-app - который создаст `<namespase>` в кластере kubernetes на основе конфигурации ns.yaml и db.yaml
 
 * make clean-app - который удалит `<namespase>` в кластере kubernetes на основе конфигурации ns.yaml и db.yaml
+
+>[!HELP]
+>В сценариях make можно указывать относительный путь для текущей директории (где находится `Makefile`) переменной $(CURDIR)
