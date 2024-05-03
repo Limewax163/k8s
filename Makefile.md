@@ -6,23 +6,21 @@ default: help;
 
 help:
 
-.PHONY
+.PHONY preprovision destroy
 preprovision:
   echo "Cluster Deployment"
   kind create cluster --config kind.yaml
-
-.PHONY
 destroy:
   kind delete cluster --name kind
 
-.PHONY
+.PHONY install-app
 install-app:
   echo "Namespase create"
   kubectl apply -f ns.yaml
   echo "Database deployment"
   kubectl apply -f db.yaml  
 
-.PHONY
+.PHONY clean-app
 clean-app:
   echo "Database delete"
   kubectl delete -f db.yaml
