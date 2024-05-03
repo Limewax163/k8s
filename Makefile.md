@@ -8,7 +8,7 @@ help:
 
 .PHONY preprovision destroy
 preprovision:
-  echo "Cluster Deployment"
+  echo "Cluster Deployment"                      #Команды после указания вызова должны быть записаны через табуляцию (в том числе не подразумеваются 8 пробелов)
   kind create cluster --config kind.yaml
 destroy:
   kind delete cluster --name kind
